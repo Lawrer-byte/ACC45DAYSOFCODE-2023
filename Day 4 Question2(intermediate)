@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    int t;
+    cin >> t;
+
+    while (t--) {
+        int l, v1, v2;
+        cin >> l >> v1 >> v2;
+        int htime,ttime ;
+        
+        htime = (l + v2 - 1) / v2; 
+        
+        ttime = (l + v1 - 1) / v1; 
+
+        if (htime >= ttime) 
+        {
+            cout << -1 << endl;
+        } 
+        else 
+        {
+            cout << ttime - htime - 1 << endl;
+        }
+    }
+
+    return 0;
+}
