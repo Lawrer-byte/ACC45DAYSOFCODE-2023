@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t,tp1,tp2;
+    cin>>t;
+    while(t--)
+    {
+        int Pa,Pb,Qa,Qb ;
+        cin>>Pa>>Pb>>Qa>>Qb;
+        
+        if(Pa<Pb)
+        tp1= Pb;
+        
+        else
+        tp1= Pa;
+        
+        if(Qa<Qb)
+        tp2= Qb;
+        
+        else
+        tp2= Qa;
+        
+        if(tp1<tp2)
+        cout<<"P"<<endl;
+        
+        else if(tp1>tp2)
+        cout<<"Q"<<endl;
+        
+        else
+        cout<<"TIE"<<endl;
+        
+        
+    }
+	return 0;
+}
