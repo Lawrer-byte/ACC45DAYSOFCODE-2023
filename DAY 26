@@ -1,0 +1,19 @@
+for _ in range(int(input())):
+    x = list (map(int,input().split()))
+    a= x[:3]
+    b= x[3:]
+    a.sort(reverse=True)
+    b.sort(reverse=True)
+    print(a)
+    print(b)
+    s1=a[0]*100+a[1]*10+a[2]
+    s2=b[0]*100+b[1]*10+b[2]
+    print(s1)
+    print(s2)
+    if s1>s2:
+        print("ALICE")
+    elif s1<s2:
+        print("BOB")
+    else:
+        print("TIE")
+        
