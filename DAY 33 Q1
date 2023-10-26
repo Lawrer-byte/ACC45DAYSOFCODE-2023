@@ -1,0 +1,11 @@
+# cook your dish here
+t=int(input())
+for i in range(t):
+    a1,a2,b1,b2=map(int,input().split())
+    imp=a1+b1
+    exp=a2+b2
+    net= exp-imp
+    if net>0:
+        print("YES")
+    else:
+        print("NO")
