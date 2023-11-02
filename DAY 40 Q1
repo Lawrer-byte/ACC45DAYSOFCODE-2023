@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    /*
+    # cook your dish here
+for _ in range(int(input())):
+    x,y,d=map(int,input().split())
+    if((abs(x-y)<=d)):
+        print('YES')
+    else:
+        print("NO")
+        
+    # if (x>=y and x-y<=d):
+    #      print("YES")
+    # elif(y>x and y-x<=d):
+    #     print("YES")
+    # else:
+    #     print("NO")
+    
+         */
+	// your code goes here
+	int t,x,y,d ;
+	cin>>t;
+	while(t--){
+	    cin>>x>>y>>d;
+	    if(abs(x-y) <=d)
+	    cout<<"YES"<<endl;
+	    else
+	    cout<<"NO"<<endl;
+	}
+	return 0;
+}
