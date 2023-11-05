@@ -1,0 +1,12 @@
+# cook your dish here
+for i in range(int(input())):
+    n=int(input())
+    a=list(map(int,input().split()))[:n]
+    b=list(map(int,input().split()))[:n]
+    c=0
+    for i in range(len(a)):
+        if(i==0 and a[i]>=b[i]):
+            c=c+1
+        elif(i!=0 and a[i]-a[i-1]>=b[i]):
+            c=c+1
+    print(c)
